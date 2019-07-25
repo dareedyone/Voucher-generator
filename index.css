@@ -6,11 +6,25 @@ body {
 .container {
     width: 80%;
     margin: auto;
-    border: 2px solid black;
-    background-color: rgb(156, 69, 69);
+    background-image: linear-gradient(60deg,rgb(143, 193, 235), rgb(22, 22, 189));
     text-align: center;
     padding-top: 2rem;
+    padding-bottom: 30px;
+    border-radius: 2px;
+    margin-top: 60px;
 }
+
+.generator-wrapper {
+    width: 40%;
+    float: left;
+}
+.generator {
+    text-align: left;
+    padding-left: 90px;
+}
+.generator input, .generator select {
+width:  100px;
+} 
 
 
 .generator h3 {
@@ -30,5 +44,127 @@ margin: auto;
 border:  2px solid black;
 margin-top: 30px;
 }
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.body {
+    height: 500px;
+    width: 25%;
+    background-image: linear-gradient(60deg, rgb(22, 22, 189), rgb(143, 193, 235));
+    border: 2px solid rgb(59, 56, 56);
+    margin: auto;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 3px 5px black;
+    float: right;
+    margin-right:  150px;
+   
+
+   
+}
+
+.inner {
+    height: 88%;
+    width: 88%;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    border-radius: 5px;
+
+}
+
+.speaker {
+    border-radius: 10px;
+    height: 10px;
+    width: 60px;
+    background-color: rgb(46, 44, 44);
+    margin: auto;
+    margin-top: 15px;
+}
+
+
+
+#fdp {
+    box-sizing: border-box;
+    resize: none;
+    width: 100%;
+    height: 80%;
+    font-size: 15px;
+    text-align: right;
+    color: black;
+   padding: 15px;
+   padding-top: 30%;
+    border: none;
+
+
+}
+
+.text-wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    height: 40%;
+    padding: 0;
+    border-radius: 3px;
+    text-align: left;
+    background-color: #EBEBE4;
+    border: 3px solid #A9A9A9;
+    border: none;
+}
+
+.text-wrapper p {
+    margin-left: 10px;
+    height: 5%;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+img {
+    width: 20px;
+}
+
+
+#first {
+   width: 100%;
+    height: 62%;
+    background-color: rgb(10, 10, 10);
+    float: left;
+    margin-top: -8px;
+}
+
+#first tr td button {
+   padding: 0;
+    width: 100%;
+    height: 90%;
+    font-size: 80%;
+    background-color: rgb(10, 10, 10);
+  
+    color: #fff;
+    border: none;
+    /* float: left; */
+}
+
+
+
+
+
+.smallb {
+    height: 1px;
+}
+
+
+
+
+
+
+
+
+
+
 
 

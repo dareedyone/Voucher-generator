@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,41 +9,114 @@
     <link rel="stylesheet" href="index.css">
     <script defer src="index.js"></script>
 </head>
+
 <body>
     <div class="container">
-        <div class="generator">
-            <h3>Voucher Generator</h3>
-            <label for="nc">No of cards</label>
-            <input id="nc" type="number"> &nbsp;&nbsp;&nbsp; 
 
-            <label for="cv">Card value</label>
-            <select id="cv">
-                    <option value="#50">#50</option>
-                    <option value="#50">#100</option>
-                    <option value="#200">#200</option>
-                    <option value="#1000">#1000</option> 
-            </select>&nbsp;&nbsp;&nbsp;
+        <div class="generator-wrapper">
+            <div class="generator">
+                <h3>Voucher Generator</h3>
+                <label for="nc">No of cards</label>
+                <input id="nc" type="number"> <br> <br>
 
-            <label for="nn">Network name</label>
-            <select id="nn">
-                    <option value="Mtn">Mtn</option>
-                    <option value="Airtel">Airtel</option>
-                    <option value="Glo">Glo</option>
-                    <option value="Etisalat">Etisalat</option>
-                    <option value="9ja Mobile">9ja Mobile</option>
+                <label for="cv">Card value</label>
+                <select id="cv">
                    
-                  </select> <br> <br> <br> <br>
+                    <option value="#100">#100</option>
+                    <option value="#200">#200</option>
+                    <option value="#500">#500</option>
+                    <option value="#1000">#1000</option>
+                </select> <br> <br>
 
-                <button id="grt" type="button">Generate</button>        
+                <label for="nn">Network name</label>
+                <select id="nn">
+                    <option value="Mtn">Mtn</option>
+                    <option value="Glo">Glo</option>
+                    <!-- <option value="Airtel">Airtel</option>
+                    <option value="Etisalat">Etisalat</option>
+                    <option value="9ja Mobile">9ja Mobile</option> -->
 
+                </select> <br> <br> <br> <br>
+
+                <button id="grt" type="button">Generate</button>
+
+            </div>
+
+
+            <div id="dp">
+            </div>
         </div>
 
-       
-        <div id="dp">
+
+
+        <div class="body">
+            <div class="speaker"></div>
+            <div class="inner">
+
+                <div class="text-wrapper">
+                    <p id="ntw">Mtn|Glo</p>
+                 <textarea disabled type="text" id="fdp"></textarea>    <!-- disabled later-->
+            </div>
+            
+
+                <table id="first">
+                    <tr>
+                       
+                        <td><button type="button" onclick="green()" ondblclick="swtch()"><img src="image/call.png" alt="img"></button></td>
+                        <td><button type="button" onclick="clr()"><img src="image/cancr.png" alt="img"></button></td>
+                        <td><button type="button" onclick="red()"><img src="image/cut.png" alt="img"></button> </td> 
+                    </tr>
+                                
+                    <tr>
+                        <td><button type="button" onclick="getNo(1)">1</button></td>
+                        <td><button type="button" onclick="getNo(2)">2</button></td>
+                        <td><button type="button" onclick="getNo(3)">3</button></td>
+                        
+                    </tr>
+
+                    <tr>
+                        <td><button type="button" onclick="getNo(4)">4</button></td>
+                        <td><button type="button" onclick="getNo(5)">5</button></td>
+                        <td><button type="button" onclick="getNo(6)">6</button></td>
+                        
+                    </tr>
+
+                    <tr>
+                        <td><button type="button" onclick="getNo(7)">7</button></td>
+                        <td><button type="button" onclick="getNo(8)">8</button></td>
+                        <td><button type="button" onclick="getNo(9)">9</button></td>
+                     
+                    </tr>
+
+
+                    <tr>
+                        <td><button type="button" onclick="getNo('*')">*</button></td>
+                        <td><button type="button" onclick="getNo(0)">0</button></td>
+                        <td><button type="button" onclick="getNo('#')">#</button></td>
+                        
+                    </tr>
+
+
+                </table>
+
+
+
+
+
+
+            </div>
         </div>
+
+
+
+
 
 
     </div>
-    
+
+
+
+
 </body>
+
 </html>
